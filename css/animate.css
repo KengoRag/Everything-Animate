@@ -1,0 +1,36 @@
+#rotate {
+  -webkit-transform: rotate(40deg);
+}
+
+#skew {
+  -webkit-transform: skewX(15deg);
+}
+
+#all {
+  -webkit-transform: rotate(69deg);
+  -webkit-transform: skewY(44deg);
+}
+
+#matrix {
+  -webkit-transform: matrix(1, 2, 1, 0.5, 2, 2);
+
+
+}
+
+input:focus {
+  background-color: yellow;
+}
+
+@keyframes widthChange {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 25%;
+  }
+  
+  100% {
+    width: 50%;
+  }
+}
