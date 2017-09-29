@@ -14,7 +14,6 @@
 #matrix {
   -webkit-transform: matrix(1, 2, 1, 0.5, 2, 2);
 
-
 }
 
 input:focus {
@@ -33,4 +32,15 @@ input:focus {
   100% {
     width: 50%;
   }
+}
+
+@keyframes dieMove {
+  0% {top: 0px;}
+  25% {top: 200px;}
+  75% {top: 50px;}
+  100% {top: 100px;}
+}
+
+#animate {
+  -webkit-animation: dieMove; 5s infinite;
 }
