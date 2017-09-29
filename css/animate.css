@@ -17,30 +17,36 @@
 }
 
 input:focus {
-  background-color: yellow;
+  background-color: green;
+  border-width: 5px;
 }
 
-@keyframes widthChange {
+@keyframes animate {
   0% {
-    width: 0%;
+    transform: translateX(0);
   }
-
+  10% {
+    transform: translateX(25px);
+  }
+  20% {
+    transform: translateX(50px);
+  }
+  35% {
+    transform: translateX(75px);
+  }
   50% {
-    width: 25%;
+    transform: translateX(100px);
   }
-  
+  60% {
+    transform: translateX(75px);
+  }
+  70% {
+    transform: translateX(50px);
+  }
+  85% {
+    transform: translateX(25px);
+  }
   100% {
-    width: 50%;
+    transform: translateX(0);
   }
-}
-
-@keyframes dieMove {
-  0% {top: 0px;}
-  25% {top: 200px;}
-  75% {top: 50px;}
-  100% {top: 100px;}
-}
-
-#animate {
-  -webkit-animation: dieMove; 5s infinite;
 }
