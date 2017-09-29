@@ -65,3 +65,45 @@ input:focus {
     transform: rotate(360deg);
   }
 }
+
+#rotate:hover {
+  animation-name: rotateAnime;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#pseudo:hover {
+  background-color: magenta;
+  animation-name: pseudoAnime;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pseudoAnime {
+  0% {
+    transform: skewY(49deg);
+  }
+  25% {
+    transform: skewY(69deg);
+    transform: skewX(33deg);
+  }
+  50% {
+    transform: skewY(77deg);
+    transform: skewX(66deg);
+    transform: rotate(120deg);
+  }
+
+  75% {
+    transform: skewY(88deg);
+    transform: skewX(79deg);
+    transform: rotate(240deg);
+    transform: translateX(40px);
+  }
+  100% {
+    transform: skewY(100deg);
+    transform: skewX(99deg);
+    transform: rotate(360deg);
+    transform: trasnlateX(100px);
+  }
+
+}
